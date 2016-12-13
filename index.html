@@ -397,7 +397,38 @@ the current stock awaiting a new owner.</p>
 <div class="container-fluid">
 	<h1 id="contact">CONTACT</h1>
 	<hr>
-	<p>Please feel free to contact me with any questions via any of the below.</p>
+<p>Please feel free to contact me with any questions via any of the below.</p>
+
+<form class="form-horizontal" role="form" method="post" action="contactform.php">
+	<div class="form-group">
+		<div class="col-sm-12">
+			<input type="text" class="form-control" id="name" name="name" placeholder="Name" value="">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-12">
+			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-12">
+			<textarea class="form-control" rows="2" name="message" placeholder="Hello..." value=""></textarea>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-12">
+			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<! Will be used to display an alert to the user>
+		</div>
+	</div>
+</form>
+
+
 	<p><strong>Email:</strong><a href="mailto:?subject=&body=:%20"> lacdiamonds@gmail.com</a> <br>
 	<strong>Tel:</strong> +44 7785 893 92<br>
 

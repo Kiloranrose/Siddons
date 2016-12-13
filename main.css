@@ -10,12 +10,21 @@
 }
 
 .container-fluid .jumbotron{
-    padding-left: 0;
+  adding-left: 0;
   padding-right: 0;
   }
 
 .jumbotron {
 	background-color: #fff;
+  margin-bottom: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbotron.contact {
+  background-color: #fff;
   margin-bottom: 0;
   margin-left: 10%;
   margin-right: 10%;
@@ -347,5 +356,21 @@ div#instafeed img {
   padding: 2px;
   width: 12%;
 }
+
+form.form-horizontal {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color:#c2cece;
+  border:none; 
+  display: block;
+  margin: 0 auto;
+  font-family:  'Lato', sans-serif;
+
+}
+
 
 
