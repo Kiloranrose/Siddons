@@ -11,6 +11,7 @@
   	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="instafeed.min.js"></script>
 
 
 </head>
@@ -312,30 +313,32 @@ the current stock awaiting a new owner.</p>
 <div class="jumbotron">
 	<h1 id="test">TESTIMONIALS</h1>
 	<hr>
-	<h2>Al Cheyne, London, UK</h2>
+
+	<div class="row">
+	 <div class="col-xs-12 col-sm-6 col-md-4"><h2>Al Cheyne, London, UK</h2>
 	    <p><span class="more">
       “Lucy provided invaluable help in my search for the perfect ring. There is no substitute for having someone actually in the trade working with you rather than trying to sell to you when trying to make a decision on buying a ring. Lucy’s knowledge and hard work on identifying and researching the types of stone I wanted meant that I got the very best for my budget and found the whole experience interesting and enjoyable. I Couldn’t recommend her highly enough and a big thank you.”
-    </span></p>
+    </span></p></div>
 
-    	<h2>Mathew Meyer-Higgins, London, UK</h2>
+     <div class="col-xs-12 col-sm-6 col-md-4"><h2>Mathew Meyer-Higgins, London, UK</h2>
 	    <p><span class="more">
       Lucy made the whole process of finding an engagement ring very simple and easy, especially since I had been looking without success for a while. She understood what I was looking for and was a huge help with the details I wasn&#39;t so sure about. She managed to find me a brilliant stone at auction which she then organised to have set in a beautiful ring. It is absolutely perfect and my fiancée and I are thrilled with the result. I got exactly what I wanted, within my price range and without any fuss or hassle (Lucy was very flexible around my working hours and location and made meeting up in secret very easy). Altogether a fantastic service and a brilliant ring. Would recommend to everyone!
-    </span></p>
+    </span></p></div>
 
-    	<h2>James Pelly, London, UK</h2>
+    <div class="col-xs-12 col-sm-6 col-md-4">	<h2>James Pelly, London, UK</h2>
 	    <p><span class="more">
       “As a typical male(!) when it came to ‘all things jewellery’, I quickly became extremely grateful for Lucy’s patient approach to educating me, for her sound advice and for her genuine enthusiasm in helping me choose the right ring. She was full of enthusiasm in coming up with new ideas and yet would somehow know if something was going to work or not.  When it came to actually making the ring, Lucy was faced with a tight timescale given a relatively complicated design.  This meant vigorously ensuring the numerous processes of sourcing, cutting and setting the stones, as well as making the ring, hall-marking and engraving were all completed in good time so that the next step could start without delay.  Her persistent attention to detail at every stage (of the process) culminated in a stunning ring, a delighted recipient and one hugely grateful (and relieved) male”.
-    </span></p>
+    </span></p></div>
 
-    	<h2>Catherine Boyd, Brussels, Belgium</h2>
+     <div class="col-xs-12 col-sm-6 col-md-4">	<h2>Catherine Boyd, Brussels, Belgium</h2>
 	    <p><span class="more">
      Lucy was really amazing in creating my engagement ring. I had found a ring I loved in Burlington Arcade, which was very expensive, Lucy went to the shop, looked at it, sourced stones and created a more beautiful and significantly less costly version for me. Lucy took the trouble to show me a variety of stones and settings and advised me, so now I have the most beautiful ring&quot;
-    </span></p>
+    </span></p> </div>
 
-    	<h2>Noel Garvey, Dublin, Ireland</h2>
+     <div class="col-xs-12 col-sm-6 col-md-4">	<h2>Noel Garvey, Dublin, Ireland</h2>
 	    <p><span class="more">
       Lucy has a wonderful talent for what she does. We have gone to her several times over the years and she has always found something unique and special for me - the design, quality and craftsmanship are second to none. I trust her implicitly and have recommended her to friends and family. I can honestly say I would not consider using any other jeweller in future.
-    </span></p>
+    </span></p></div>
 
 	
 </div>
@@ -397,18 +400,26 @@ the current stock awaiting a new owner.</p>
 	<p>Please feel free to contact me with any questions via any of the below.</p>
 	<p><strong>Email:</strong><a href="mailto:?subject=&body=:%20"> lacdiamonds@gmail.com</a> <br>
 	<strong>Tel:</strong> +44 7785 893 92<br>
-	<strong>Follow me:</strong><a href="https://www.instagram.com/siddonsfinejewellery/"> @siddonsfinejewellery</a> </p>
 
 			<div class="social">
 		<a href="https://www.instagram.com/siddonsfinejewellery/" ><img src="images/1480448798_instagram.png"></a>
 		<a href="mailto:lacdiamonds@gmail.com?" ><img src="images/1480448811_mail.png"></a>
 	</div>
 
-	<h3>Look forward to hearing from you!</h3>
+	<h3>See latest updates <a href="https://www.instagram.com/siddonsfinejewellery/"> @siddonsfinejewellery</a> </p></h3>
 
 <!-- instafeed -->
 
-<div style="position: relative; height: 16px; width: 100%; overflow: hidden; padding-top:16.666666666666664%;"><iframe src="//widgets-code.websta.me/w/4d7f635a8012?ck=MjAxNi0xMS0yOVQxMDo1ODowMy4yMTFa" class="websta-widgets" allowtransparency="true" frameborder="0" scrolling="yes" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div id="instafeed" class="img-responsive"></div>
+
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '311227467',
+        accessToken: '311227467.1677ed0.57021f7ebde1446ab1b0705f09dde25f'
+    });
+    userFeed.run();
+</script>
 
 </div>
 </div>

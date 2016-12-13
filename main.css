@@ -43,7 +43,7 @@
  }
 
 .jumbotron > hr {
-    border-top-color: #EDF4F4;
+    border-top-color: #c2cece;
 }
 
 .container-fluid h1 {
@@ -74,7 +74,7 @@
 	margin: -10px 0px 20px 0px;
 	padding: 0;
   font-size: 30px;
-  color: #98BBCA;
+  color: #c2cece;
 }
 
 .container-fluid h2:last-child {
@@ -82,7 +82,7 @@
 }
 
 a {
- color: #98BBCA;
+ color: #c2cece;
 }
 
 
@@ -136,7 +136,7 @@ img#profilepic.img-circle {
   margin-right: auto;
   margin-bottom: 10px;
   width: 30%;
-  border:solid #EDF4F4 4px;
+  border:solid #c2cece 4px;
 }
 
 div#about.jumbotron {
@@ -325,7 +325,7 @@ div.thumbnail {
 .footer a {
 	text-align: center;
 	line-height: 2;
-	background-color: #EDF4F4;
+	background-color: #c2cece;
 	color: black;
 	font-size: 14px;
 }
@@ -337,5 +337,15 @@ div.thumbnail {
   text-align: center;
 }
 
+div#instafeed {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div#instafeed img {
+  padding: 2px;
+  width: 12%;
+}
 
 
