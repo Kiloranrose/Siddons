@@ -61,6 +61,7 @@
   font-weight: bold;
 	font-size: 18px;
   margin: 0;
+  color: #c2cece;
 }
 
 .container-fluid h2 {
@@ -102,16 +103,14 @@ div.nav ul {
 	background-color: #EDF4F4;
 	margin: 0;
 	padding: 0;
-
 }
 
 div.nav li {
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px; 
-	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
 	text-align: center;
-	padding: 20px;
+	padding: 12px;
 }
 
 div.nav a {
@@ -119,20 +118,6 @@ div.nav a {
 	text-decoration: none;
 }
 
-.social {
-	justify-content: center;
-	margin: 0 auto;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.social img {
-width: 40px;
-padding: 5px;
-border: 0;
-box-shadow: 0;
-display: block-inline;
-}
 
 .col-xs-12.col-sm-6.col-md-6 {
   padding: 0;
@@ -161,19 +146,23 @@ div#about.jumbotron {
     font-size: 10px;
 }
 
+.slide-1 img {
+ width: 100%;
+}
+
+.slide-1 figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.slide-1 figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
 
 /* Parallex bars */
 
-div.parallex {
-	background-image: url("images/main_1.jpg");
-  	height: 400px;
-  	background-position: 50% 50%;
-	 background-repeat: no-repeat;
-  	background-attachment: absolute;
-  	background-size: cover;
-  	margin: 0;
-    width: 100%;
-}
 
 /* logo */
 
