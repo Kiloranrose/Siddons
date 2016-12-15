@@ -2,6 +2,7 @@
 
 .container {
   padding: 0;
+  margin: 0;
 }
 
 .container-fluid {
@@ -21,6 +22,8 @@
   margin-right: 10%;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .jumbotron.contact {
@@ -91,32 +94,39 @@
   margin: 10px 0px 0px 0px;
 }
 
-a {
- color: #c2cece;
+.container-fluid a {
+  color: #98ACAC;
 }
 
 
 /* nav bar*/
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
 
-div.nav ul {
-	text-align: center;
-	background-color: #EDF4F4;
-	margin: 0;
-	padding: 0;
+  }
+ .navbar-nav li {
+      float: none;
+      display: inline-block;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: black;
+  }
+
+  .navbar-nav a {
+    padding: 0;
+  }
+
+.navbar.navbar-default {
+  margin-bottom: 0;
+  background-color: #EDF4F4;
+  border:none 0;
+  border-radius: 0px;
+  height: 20px;
 }
 
-div.nav li {
-	display: inline-block;
-	font-family: 'Lato', sans-serif;
-	font-size: 12px;
-	text-align: center;
-	padding: 12px;
-}
 
-div.nav a {
-	color:black;
-	text-decoration: none;
-}
 
 
 .col-xs-12.col-sm-6.col-md-6 {
@@ -133,10 +143,6 @@ img#profilepic.img-circle {
   border:solid #c2cece 4px;
 }
 
-div#about.jumbotron {
-  background-color: #EDF4F4;
-}
-
 .morecontent span {
     display: none;
 }
@@ -148,6 +154,7 @@ div#about.jumbotron {
 
 .slide-1 img {
  width: 100%;
+
 }
 
 .slide-1 figure img {
@@ -171,7 +178,7 @@ img#logo.img-responsive{
  	margin-left: auto;
   margin-right: auto;
 	width: 60%;
-	padding: 0;
+	padding:0;
 
 }
 
@@ -179,8 +186,8 @@ img#logo.img-responsive{
 
 /* Gallery */
 
-.col-xs-6.col-sm-4.col-md-2 {
-	padding: 10px;
+.col-xs-4.col-sm-3.col-md-2 {
+	padding: 2px;
 }
 
 .jumbotron.contact p {
@@ -203,17 +210,18 @@ img.hover-shadow.img-responsive {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: #c2cece;
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #fff;
   margin: auto;
   padding: 0;
   width: 60%;
   max-width: 1200px;
+  border:none;
 }
 
 /* The Close Button */
@@ -269,9 +277,10 @@ img.hover-shadow.img-responsive {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: #c2cece;
+  font-size: 14px;
   padding: 8px 12px;
+  font-family:'Montserrat', sans-serif;
   position: absolute;
   top: 0;
 }
