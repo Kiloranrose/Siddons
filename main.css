@@ -64,14 +64,14 @@
   font-weight: bold;
 	font-size: 18px;
   margin: 0;
-  color: #c2cece;
 }
 
 .container-fluid h2 {
 
 	font-family:'Montserrat', sans-serif;
   font-weight: bold;
-	font-size: 12px;
+	font-size: 14px;
+
 
 }
 
@@ -81,17 +81,35 @@
 	font-size: 12px;
 }
 
+
 .container-fluid h3 {
 	font-family: 'Dawning of a New Day', cursive;
 	text-align: center;
 	margin: -10px 0px 20px 0px;
 	padding: 0;
-  font-size: 30px;
+  font-size: 26px;
   color: #c2cece;
+}
+
+.container-fluid h3:first-child {
+  font-size: 10px;
+  color: black;
+}
+
+
+.container-fluid h4 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 26px;
+  margin:20px;
 }
 
 .container-fluid h2:last-child {
   margin: 10px 0px 0px 0px;
+}
+
+.container-fluid h1:first-child {
+  margin: 0px 0px 20px 0px;
 }
 
 .container-fluid a {
