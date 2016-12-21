@@ -175,6 +175,7 @@ img#profilepic.img-circle {
 
 }
 
+/*
 .slide-1 figure img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -185,6 +186,7 @@ img#profilepic.img-circle {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
+*/
 
 /* Parallex bars */
 
@@ -387,6 +389,5 @@ form.form-horizontal {
   font-family:  'Lato', sans-serif;
 
 }
-
 
 

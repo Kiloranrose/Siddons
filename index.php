@@ -5,7 +5,7 @@
 		$message = $_POST['message'];
 		$human = intval($_POST['human']);
 		$from = 'Demo Contact Form'; 
-		$to = 'example@domain.com'; 
+		$to = 'lucy@siddonsfinejewellery.com'; 
 		$subject = 'Message from Contact Demo ';
 		
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
@@ -24,15 +24,11 @@
 		if (!$_POST['message']) {
 			$errMessage = 'Please enter your message';
 		}
-		//Check if simple anti-bot test is correct
-		if ($human !== 5) {
-			$errHuman = 'Your anti-spam is incorrect';
-		}
-
+	
 // If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+if (!$errName && !$errEmail && !$errMessage) {
 	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+		$result='<div class="alert alert-success">Thank You! I will be in touch as soon as possible</div>';
 	} else {
 		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
 	}
@@ -43,55 +39,41 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bootstrap contact form with PHP example by BootstrapBay.com.">
-    <meta name="author" content="BootstrapBay.com">
-    <title>Bootstrap Contact Form With PHP Example</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>Bootstrap Contact Form</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-  	<div class="container">
+  	<div class="container-fluid">
   		<div class="row">
-  			<div class="col-md-6 col-md-offset-3">
-  				<h1 class="page-header text-center">Contact Form Example</h1>
+  			<div class="col-md-12">
 				<form class="form-horizontal" role="form" method="post" action="index.php">
 					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Name</label>
-						<div class="col-sm-10">
+						<div class="col-sm-12">
 							<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
 							<?php echo "<p class='text-danger'>$errName</p>";?>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="email" class="col-sm-2 control-label">Email</label>
-						<div class="col-sm-10">
+						<div class="col-sm-12">
 							<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
 							<?php echo "<p class='text-danger'>$errEmail</p>";?>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="message" class="col-sm-2 control-label">Message</label>
-						<div class="col-sm-10">
-							<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+						<div class="col-sm-12">
+							<textarea class="form-control" rows="4" name="message" placeholder="Message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
 							<?php echo "<p class='text-danger'>$errMessage</p>";?>
 						</div>
 					</div>
+					
 					<div class="form-group">
-						<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-							<?php echo "<p class='text-danger'>$errHuman</p>";?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10 col-sm-offset-2">
+						<div class="col-sm-12">
 							<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
 						</div>
 					</div>
 					<div class="form-group">
-						<div class="col-sm-10 col-sm-offset-2">
+						<div class="col-sm-12">
 							<?php echo $result; ?>	
 						</div>
 					</div>
@@ -99,7 +81,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 			</div>
 		</div>
 	</div>   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
